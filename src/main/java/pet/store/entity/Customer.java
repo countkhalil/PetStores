@@ -22,7 +22,7 @@ public class Customer {
 	private Long customerId;
 	private String customerFirstName;
 	private String customerLastName;
-	private String customeremail;
+	private String customerEmail;
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude

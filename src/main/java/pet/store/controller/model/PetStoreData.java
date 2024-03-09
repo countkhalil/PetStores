@@ -54,10 +54,13 @@ public class PetStoreData {
 		private Long customerId;
 		private String customerFirstName;
 		private String customerLastName;
-		private String customeremail;	
+		private String customerEmail;	
 		
-		PetStoreCustomer(Customer customer){
-			
+		public PetStoreCustomer(Customer customer){
+			customerId = customer.getCustomerId();
+			customerFirstName = customer.getCustomerFirstName();
+			customerLastName= customer.getCustomerLastName();
+			customerEmail= customer.getCustomerEmail();
 		}
 	}
 	@Data
@@ -66,11 +69,15 @@ public class PetStoreData {
 		private Long employeeId;
 		private String employeeFirstName;
 		private String employeeLastName;
-		private String employeephone;
+		private String employeePhone;
 		private String employeeJobTitle;
 		
-		PetStoreEmployee (Employee employee){
-			
+		public PetStoreEmployee (Employee employee){
+			employeeId = employee.getEmployeeId();
+			employeeFirstName = employee.getEmployeeFirstName();
+			employeeLastName = employee.getEmployeeLastName();
+			employeePhone = employee.getEmployeePhone();
+			employeeJobTitle = employee.getEmployeeJobTitle();
 		}
 	}
 	

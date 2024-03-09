@@ -20,7 +20,7 @@ public class Employee {
 		private Long employeeId;
 		private String employeeFirstName;
 		private String employeeLastName;
-		private String employeephone;
+		private String employeePhone;
 		private String employeeJobTitle;
 		
 		@EqualsAndHashCode.Exclude
